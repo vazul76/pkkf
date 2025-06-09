@@ -23,7 +23,12 @@
                 </div>
                 <div>
                     <p class="font-semibold">Qty</p>
-                    <input type="number" value="1" class="w-16 border rounded text-center py-1">
+                    <input 
+                        type="number" 
+                        value="1" 
+                        min="1" 
+                        oninput="this.value = Math.max(1, parseInt(this.value)) || 1"
+                        class="w-16 border rounded text-center py-1">
                 </div>
                 <div>
                     <a href="#" class="text-sm text-blue-600 hover:underline">Remove</a>
