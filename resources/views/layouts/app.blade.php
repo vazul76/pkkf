@@ -40,7 +40,7 @@
     @else
       <a href="{{ route('login') }}" class="hover:text-blue-600"><i class="fa-solid fa-circle-user"></i></a>
     @endauth
-    <a href="#" class="hover:text-blue-600"><i class="fa-solid fa-cart-shopping"></i></a>
+    <a href="{{route('cart.index')}}" class="hover:text-blue-600"><i class="fa-solid fa-cart-shopping"></i></a>
   </div>
 </nav>
 
